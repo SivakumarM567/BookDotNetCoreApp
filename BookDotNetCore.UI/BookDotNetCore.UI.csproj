@@ -5,7 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BookDotNetCore.BAl\BookDotNetCore.BAL.csproj" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BookDotNetCore.Entity\BookDotNetCore.Entity.csproj" />
   </ItemGroup>
 
 </Project>

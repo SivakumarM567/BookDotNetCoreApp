@@ -18,12 +18,12 @@ namespace BookDotNetCore.API.Controllers
         {
             _bookDetailsServices = bookDetailsServices;
         }
-        [HttpPost]
+        [HttpPost ("SaveBook")]
         public IActionResult SaveBook(BookDetails bookDetails)
         {
             return Ok(_bookDetailsServices.SaveBook(bookDetails));
         }
-        [HttpGet]
+        [HttpGet ("GetBook")]
         public IActionResult GetBook(int bookId)
         {
             return Ok(_bookDetailsServices.GetBook(bookId));

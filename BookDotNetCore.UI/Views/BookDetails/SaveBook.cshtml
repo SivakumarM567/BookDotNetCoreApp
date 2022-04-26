@@ -1,0 +1,47 @@
+﻿@model BookDotNetCore.Entity.BookDetails
+@{
+    ViewData["Title"] = "SaveBook";
+}
+
+<h1>Create Book</h1>
+</hr>
+@using (Html.BeginForm())
+{
+    <div class="form-group">
+        <label>Book name</label>
+        <input type="text" value="" asp-for="BookName" class="form-control">
+    </div>
+    <div class="form-group">
+        <label>Description</label>
+        <input type="text" value="" asp-for="Description" class="form-control">
+    </div>
+    <div class="form-group">
+        <label>Author</label>
+        <input type="text" value="" asp-for="Author" class="form-control">
+    </div>
+    <div class="form-group">
+        <label>Price</label>
+        <input type="number" value="" asp-for="price" class="form-control">
+    </div>
+    <div class="form-group">
+        <label>BookCategory</label>
+        <input type="text" value="" asp-for="BookCategory" class="form-control">
+    </div>
+    <input type="submit" value="Save" class="btn btn-primary">
+    <input type="button" value="Reset" class="btn btn-primary">
+
+    <hr />
+    <div>
+        @{
+            if (@ViewBag.status == "Ok")
+            {
+                <div class="alert alert-success">@ViewBag.message</div>
+            }
+            else
+            {
+                <div class="alert alert-danger">@ViewBag.message</div>
+            }
+        }
+    </div>
+}
+
