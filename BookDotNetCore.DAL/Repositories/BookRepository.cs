@@ -3,6 +3,8 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using BookDotNetCore.DAL.Data;
+using System.Linq;
+using Microsoft.EntityFrameworkCore;
 
 namespace BookDotNetCore.DAL.Repositories
 {
@@ -16,13 +18,17 @@ namespace BookDotNetCore.DAL.Repositories
         public string DeleteBook(int BookId)
         {
             BookDetails book = _dbContext.bookDetails.Find(BookId);
-            _dbContext.bookDetails.Remove(book);
-            _dbContext.SaveChanges();
+            if (book != null)
+            {
+                _dbContext.bookDetails.Remove(book);
+                _dbContext.SaveChanges();
+            }
             return "Deleted";
         }
-        public List<BookDetails> GetALlBooks()
+        public List<BookDetails> GetAllBooks()
         {
-            return new List<BookDetails>();
+            List<BookDetails> bookDetailsList = _dbContext.bookDetails.ToList();
+            return bookDetailsList;
         }
         public BookDetails GetBook(int BookId)
         {
@@ -37,6 +43,8 @@ namespace BookDotNetCore.DAL.Repositories
         }
         public string UpdateBook(BookDetails bookDetails)
         {
+            _dbContext.Entry(bookDetails).State = EntityState.Modified;
+            _dbContext.SaveChanges();
             return "Updated";
         }
     }

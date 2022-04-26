@@ -11,6 +11,6 @@ namespace BookDotNetCore.DAL.Repositories
         string UpdateBook(BookDetails bookDetails);
         string DeleteBook(int BookId);
         BookDetails GetBook(int BookId);
-        List<BookDetails> GetALlBooks();
+        List<BookDetails> GetAllBooks();
     }
 }

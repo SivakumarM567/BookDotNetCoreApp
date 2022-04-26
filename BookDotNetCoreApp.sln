@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32228.343
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookDotNetCore.UI", "BookDotNetCore.UI\BookDotNetCore.UI.csproj", "{4FEF0BBE-4383-4809-8537-BC402A5F67AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookDotNetCore.UI", "BookDotNetCore.UI\BookDotNetCore.UI.csproj", "{4FEF0BBE-4383-4809-8537-BC402A5F67AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookDotNetCore.API", "BookDotNetCore.API\BookDotNetCore.API.csproj", "{97896EC3-BBD3-4157-AE34-E1006FCFC623}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookDotNetCore.API", "BookDotNetCore.API\BookDotNetCore.API.csproj", "{97896EC3-BBD3-4157-AE34-E1006FCFC623}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookDotNetCore.BAl", "BookDotNetCore.BAl\BookDotNetCore.BAl.csproj", "{F423143E-2357-40E9-A98F-58D967618824}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookDotNetCore.BAL", "BookDotNetCore.BAl\BookDotNetCore.BAL.csproj", "{F423143E-2357-40E9-A98F-58D967618824}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookDotNetCore.DAL", "BookDotNetCore.DAL\BookDotNetCore.DAL.csproj", "{0D23FD1D-7601-4687-856C-C7FB4D989E9F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookDotNetCore.DAL", "BookDotNetCore.DAL\BookDotNetCore.DAL.csproj", "{0D23FD1D-7601-4687-856C-C7FB4D989E9F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookDotNetCore.Entity", "BookDotNetCore.Entity\BookDotNetCore.Entity.csproj", "{F633BA26-1E2E-4E54-BC37-66169D5DCEEB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookDotNetCore.Entity", "BookDotNetCore.Entity\BookDotNetCore.Entity.csproj", "{F633BA26-1E2E-4E54-BC37-66169D5DCEEB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

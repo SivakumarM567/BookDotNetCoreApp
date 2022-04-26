@@ -13,7 +13,7 @@ using BookDotNetCore.DAL;
 using BookDotNetCore.DAL.Data;
 using Microsoft.EntityFrameworkCore;
 using BookDotNetCore.DAL.Repositories;
-using BookDotNetCore.BAl.Services;
+using BookDotNetCore.BAL.Services;
 
 namespace BookDotNetCore.API
 {
